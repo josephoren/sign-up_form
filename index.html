@@ -5,12 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/rocketpayzfont" type="text/css"/>
 </head>
 <body>
-    <div class="img-credit">
-        Photo by Karan Karnik on Unsplash
+    <div class="img-background">
+    <div class="img-logo">A B Y S S</div>
+    <div class="img-credit">Photo by&nbsp<a href="https://unsplash.com/@kkkaran">Karan Karnik</a>&nbspon&nbsp<a href="https://unsplash.com/">Unsplash</a></div>
     </div>
     
-    <div class="forms">SIGN UP TEMPLATE</div>
+    <div class="forms">
+    <div class="forms-top">Nullam imperdiet velit vitae aliquam dictum. Donec luctus congue dolor, sit amet consectetur justo <br/> hendrerit sed. Suspendisse potenti. Donec molestie placerat auctor. Cras felis lectus, vestibulum at tellus.<br/><br/>Donec vitae nisl eget nisl dapibus. <br/><br/><br/><br/>Fill out the following fields.</div>
+
+    <div class="forms-input">
+    <div class="forms-left">
+    
+    <form>
+        <div>
+            <label for="first-name">FIRST NAME</label>
+        </div>
+        <div>
+            <input type="text" id="first-name" name="first-name" pattern="[a-zA-Z]+" required>
+        </div>       
+        <div>
+            <label for="email">EMAIL</label>
+        </div>
+        <div>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="password">PASSWORD</label>
+        </div>
+        <div>
+            <input type="password" name="password" id="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+            <span></span>
+        </div>
+    </div>
+    
+    <div class="forms-right">
+        <div>
+            <label for="last-name">LAST NAME</label>
+        </div>
+        <div>
+            <input type="text" name="last-name" id="last-name" pattern="[a-zA-Z]+" required>
+        </div>
+        <div>
+            <label for="phone-number">PHONE NUMBER</label>
+        </div>
+        <div>
+            <input type="tel" name="phone-number" id="phone-number" pattern="\d{3}[\-]?\d{3}[\-]?\d{4}" required>
+        </div>
+        <div>
+            <label for="password-confirm">CONFIRM PASSWORD</label>
+        </div>
+        <div>
+            <input type="password" name="password-confirm" id="password-confirm" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+        </div>
+    </div>
+    </div>
+    <button type="submit" class="forms-btn">Create Account</button>
+    </form>
+    </div>
 </body>
 </html>
